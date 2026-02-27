@@ -1,168 +1,20 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>香港水族交流區 - 官方下載</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-            text-align: center;
-        }
-
-        .header {
-            background: linear-gradient(135deg, #FFC107 0%, #FF9800 100%);
-            padding: 60px 20px;
-            color: white;
-            border-bottom-left-radius: 50% 20px;
-            border-bottom-right-radius: 50% 20px;
-        }
-
-        .logo {
-            width: 120px;
-            height: 120px;
-            background-color: white;
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 60px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            margin: 10px 0;
-            font-size: 28px;
-        }
-
-        p {
-            font-size: 16px;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
-        .content {
-            padding: 40px 20px;
-        }
-
-        .download-btn {
-            display: inline-block;
-            background-color: #FF9800;
-            color: white;
-            padding: 15px 40px;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 50px;
-            text-decoration: none;
-            box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);
-            transition: transform 0.2s, box-shadow 0.2s;
-            margin-top: 20px;
-        }
-
-        .download-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(255, 152, 0, 0.6);
-            background-color: #F57C00;
-        }
-
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 40px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .feature-card {
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            width: 140px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        .feature-icon {
-            font-size: 32px;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .footer {
-            margin-top: 50px;
-            padding: 20px;
-            font-size: 12px;
-            color: #999;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="header">
-        <div class="logo">🐠</div>
-        <h1>香港水族交流區</h1>
-        <p>全港最大型嘅水族愛好者社區 App。<br>交易、討論、分享心得，一站式搞掂！</p>
-        
-        <!-- 下載按鈕 (請將 href 替換為你的 Appwrite Storage 文件鏈接) -->
-        <a href="#" class="download-btn" id="downloadLink">
-            📥 下載 Android APK (最新版)
-        </a>
-        <p style="font-size: 12px; margin-top: 10px; opacity: 0.8;">目前版本: v1.0.0</p>
-    </div>
-
-    <div class="content">
-        <h2>主要功能</h2>
-        <div class="features">
-            <div class="feature-card">
-                <span class="feature-icon">🛒</span>
-                <h3>交易市場</h3>
-                <p>買賣二手器材、生物</p>
-            </div>
-            <div class="feature-card">
-                <span class="feature-icon">💬</span>
-                <h3>討論區</h3>
-                <p>新手發問、老手教學</p>
-            </div>
-            <div class="feature-card">
-                <span class="feature-icon">🦐</span>
-                <h3>水晶蝦區</h3>
-                <p>專屬蝦友交流天地</p>
-            </div>
-            <div class="feature-card">
-                <span class="feature-icon">📸</span>
-                <h3>分享日常</h3>
-                <p>曬缸、記錄成長</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        &copy; 2026 香港水族交流區. All rights reserved.
-    </div>
-
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
     <script>
-        // 這裡可以填入你在 Appwrite Storage 複製的鏈接
-        // 如果還沒有，這個按鈕會是一個空鏈接
-        const appwriteApkUrl = "https://sgp.cloud.appwrite.io/v1/storage/buckets/Images/files/69a0e7d200347f28d080/view?project=699b02d5003adf9da180"; 
-        
-        const btn = document.getElementById('downloadLink');
-        if (appwriteApkUrl && appwriteApkUrl !== "YOUR_APPWRITE_APK_URL_HERE") {
-            btn.href = appwriteApkUrl;
-        } else {
-            btn.onclick = function() {
-                alert('APK 鏈接尚未配置，請聯繫管理員！');
-                return false;
-            }
-        }
+      var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+        CSS.supports('top: constant(a)'))
+      document.write(
+        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+        (coverSupport ? ', viewport-fit=cover' : '') + '" />')
     </script>
-</body>
+    <title></title>
+    <!--preload-links-->
+    <!--app-context-->
+  </head>
+  <body>
+    <div id="app"><!--app-html--></div>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
