@@ -80,6 +80,19 @@
             text-decoration: none;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             transition: all 0.2s ease;
+            margin: 10px;
+        }
+
+        .download-btn.secondary {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            box-shadow: none;
+        }
+
+        .download-btn.secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-3px);
         }
 
         .download-btn:hover {
@@ -340,9 +353,14 @@
         <h1>香港水族交流區</h1>
         <p class="subtitle">全港最大型嘅水族愛好者社區 App。<br>交易、討論、分享心得，一站式搞掂！</p>
         
-        <a href="#" class="download-btn" id="downloadLink">
-            <span>📥</span> 下載 Android APK
-        </a>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <a href="#" class="download-btn" id="downloadLink">
+                <span>📥</span> 下載 Android APK
+            </a>
+            <a href="index2.html" class="download-btn secondary">
+                <span>🌐</span> 網頁版試用
+            </a>
+        </div>
         <p class="version-info">最新版本: v1.0.0 | 發布日期: 2026-02-27</p>
     </div>
 
