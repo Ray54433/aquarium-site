@@ -134,8 +134,15 @@
         /* Features Grid */
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+
+        /* Responsive Features */
+        @media (max-width: 900px) {
+            .features {
+                grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            }
         }
 
         .feature-card {
@@ -194,14 +201,14 @@
             width: 100%;
             height: 100%;
             background-color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-size: 14px;
-            text-align: center;
-            padding: 20px;
-            box-sizing: border-box;
+            overflow: hidden; /* Ensure image doesn't overflow */
+        }
+        
+        .phone-screen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Fill the screen area */
+            display: block;
         }
         
         /* Placeholder styling for screenshots */
@@ -365,6 +372,11 @@
                     <h3>分享日常</h3>
                     <p>隨時隨地曬缸、記錄成長點滴，與同好分享喜悅。</p>
                 </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🔨</span>
+                    <h3>競價拍賣</h3>
+                    <p>激烈的競投體驗，讓你以心水價錢投得心頭好，或將珍品拍賣給識貨之人。</p>
+                </div>
             </div>
         </div>
 
@@ -372,18 +384,29 @@
         <div class="section">
             <h2 class="section-title">App 介面預覽</h2>
             <div class="screenshots-container">
-                <!-- 你可以在這裡替換成真實的圖片 -->
+                <!-- 首頁 - 討論區 -->
                 <div class="phone-mockup">
-                    <div class="phone-screen screen-placeholder">首頁 - 討論區</div>
+                    <div class="phone-screen">
+                        <img src="https://sgp.cloud.appwrite.io/v1/storage/buckets/Images/files/69a11b41000111bceb4f/view?project=699b02d5003adf9da180" alt="首頁討論區">
+                    </div>
                 </div>
+                <!-- 交易市場 -->
                 <div class="phone-mockup">
-                    <div class="phone-screen screen-placeholder">交易市場</div>
+                    <div class="phone-screen">
+                        <img src="https://sgp.cloud.appwrite.io/v1/storage/buckets/Images/files/69a11b4b000636b50936/view?project=699b02d5003adf9da180" alt="交易市場">
+                    </div>
                 </div>
+                <!-- 水晶蝦專區 -->
                 <div class="phone-mockup">
-                    <div class="phone-screen screen-placeholder">水晶蝦專區</div>
+                    <div class="phone-screen">
+                        <img src="https://sgp.cloud.appwrite.io/v1/storage/buckets/Images/files/69a11b5a0010326c0275/view?project=699b02d5003adf9da180" alt="水晶蝦專區">
+                    </div>
                 </div>
+                <!-- 用戶個人檔案 -->
                 <div class="phone-mockup">
-                    <div class="phone-screen screen-placeholder">用戶個人檔案</div>
+                    <div class="phone-screen">
+                        <img src="https://sgp.cloud.appwrite.io/v1/storage/buckets/Images/files/69a11b54000b7e50608a/view?project=699b02d5003adf9da180" alt="用戶個人檔案">
+                    </div>
                 </div>
             </div>
             <p style="color: #999; font-size: 14px; margin-top: 15px;">* 介面持續更新優化中，以實際版本為準</p>
@@ -402,7 +425,7 @@
                         <li>🎉 <strong>正式發布！</strong> 香港水族交流區 App 上線。</li>
                         <li>✅ 新增交易市場功能 (買/賣)。</li>
                         <li>✅ 新增多個討論分區 (咸水、淡水、水草、水晶蝦)。</li>
-                        <li>✅ 支援 Appwrite 雲端登入及數據同步。</li>
+                        <li>✅ 支援雲端登入及數據同步。</li>
                         <li>✅ 優化用戶積分及等級系統。</li>
                     </ul>
                 </div>
